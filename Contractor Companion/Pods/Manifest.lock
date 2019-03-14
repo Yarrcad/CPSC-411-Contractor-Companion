@@ -1,0 +1,28 @@
+PODS:
+  - FoldingCell (4.0.3)
+  - QuickLayout (2.1.1)
+  - RAMAnimatedTabBarController (4.0.1)
+  - SwiftEntryKit (0.8.8):
+    - QuickLayout (= 2.1.1)
+
+DEPENDENCIES:
+  - FoldingCell
+  - RAMAnimatedTabBarController
+  - SwiftEntryKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FoldingCell
+    - QuickLayout
+    - RAMAnimatedTabBarController
+    - SwiftEntryKit
+
+SPEC CHECKSUMS:
+  FoldingCell: 617197a8ec9feff741419361e756eea71d60559f
+  QuickLayout: 9af2b7fd89a6552828f51a5aba28d1bcdb8b340c
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
+  SwiftEntryKit: c50f25a14772713ded1591c852d1c1dc74c95b9e
+
+PODFILE CHECKSUM: 97c93369b79498d6d84d7a38251ca83f456a42ba
+
+COCOAPODS: 1.6.1

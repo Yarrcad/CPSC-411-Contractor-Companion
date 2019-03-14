@@ -1,0 +1,6 @@
+framework module Pods_Contractor_CompanionTests {
+  umbrella header "Pods-Contractor CompanionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
