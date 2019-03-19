@@ -96,7 +96,7 @@ class FormFieldPresetFactory {
     }
     
     class func date(placeholderStyle: EKProperty.LabelStyle, textStyle: EKProperty.LabelStyle, separatorColor: UIColor, style: FormStyle) -> EKProperty.TextFieldContent {
-        let datePlaceholder = EKProperty.LabelContent(text: "Creation Date", style: placeholderStyle)
+        let datePlaceholder = EKProperty.LabelContent(text: "Weekday", style: placeholderStyle)
         return .init(keyboardType: .decimalPad, placeholder: datePlaceholder, textStyle: textStyle, leadingImage: UIImage(named: "ic_phone" + style.imageSuffix), bottomBorderColor: separatorColor)
     }
     

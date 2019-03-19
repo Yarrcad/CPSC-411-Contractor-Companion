@@ -11,7 +11,6 @@
 		63B2A79B2236A3E300D88974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A79A2236A3E300D88974 /* AppDelegate.swift */; };
 		63B2A79D2236A3E300D88974 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A79C2236A3E300D88974 /* TaskViewController.swift */; };
 		63B2A79F2236A3E300D88974 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A79E2236A3E300D88974 /* SecondViewController.swift */; };
-		63B2A7A22236A3E300D88974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B2A7A02236A3E300D88974 /* Main.storyboard */; };
 		63B2A7A42236A3E400D88974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B2A7A32236A3E400D88974 /* Assets.xcassets */; };
 		63B2A7A72236A3E400D88974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B2A7A52236A3E400D88974 /* LaunchScreen.storyboard */; };
 		63B2A7B22236A3E500D88974 /* Contractor_CompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A7B12236A3E500D88974 /* Contractor_CompanionTests.swift */; };
@@ -23,6 +22,7 @@
 		63B2A7DC2238A55800D88974 /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A7DB2238A55800D88974 /* UIScreen+Utils.swift */; };
 		63B2A7DE2238A5A000D88974 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A7DD2238A5A000D88974 /* CGRect+Utils.swift */; };
 		63B2A7E02238A5E100D88974 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2A7DF2238A5E100D88974 /* Font.swift */; };
+		63B2A81D223F659F00D88974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B2A81B223F659F00D88974 /* Main.storyboard */; };
 		6D925F29808B7E9819EA0FB0 /* Pods_Contractor_Companion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A31DF7720FEF35BC04325E1 /* Pods_Contractor_Companion.framework */; };
 		BAC254E25718AA26DFBD74D6 /* Pods_Contractor_CompanionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990180214BDA53069CA45A3 /* Pods_Contractor_CompanionUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,6 @@
 		63B2A79A2236A3E300D88974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B2A79C2236A3E300D88974 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		63B2A79E2236A3E300D88974 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		63B2A7A12236A3E300D88974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63B2A7A32236A3E400D88974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B2A7A62236A3E400D88974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B2A7A82236A3E400D88974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		63B2A7DB2238A55800D88974 /* UIScreen+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
 		63B2A7DD2238A5A000D88974 /* CGRect+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
 		63B2A7DF2238A5E100D88974 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		63B2A81C223F659F00D88974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../Downloads/CPSC-411-Contractor-Companion-v1-master/Contractor Companion/Contractor Companion/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		8AE89B5C243AB0C50BF0FC9D /* Pods-Contractor Companion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contractor Companion.release.xcconfig"; path = "Target Support Files/Pods-Contractor Companion/Pods-Contractor Companion.release.xcconfig"; sourceTree = "<group>"; };
 		9484FFC17AB1FEB1A0A49931 /* Pods-Contractor Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contractor Companion.debug.xcconfig"; path = "Target Support Files/Pods-Contractor Companion/Pods-Contractor Companion.debug.xcconfig"; sourceTree = "<group>"; };
 		9EA5272DEF0F0AED72748356 /* Pods-Contractor CompanionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contractor CompanionTests.release.xcconfig"; path = "Target Support Files/Pods-Contractor CompanionTests/Pods-Contractor CompanionTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				63B2A79A2236A3E300D88974 /* AppDelegate.swift */,
 				63B2A79C2236A3E300D88974 /* TaskViewController.swift */,
 				63B2A79E2236A3E300D88974 /* SecondViewController.swift */,
-				63B2A7A02236A3E300D88974 /* Main.storyboard */,
+				63B2A81B223F659F00D88974 /* Main.storyboard */,
 				63B2A7A32236A3E400D88974 /* Assets.xcassets */,
 				63B2A7A52236A3E400D88974 /* LaunchScreen.storyboard */,
 				63B2A7A82236A3E400D88974 /* Info.plist */,
@@ -305,9 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B2A81D223F659F00D88974 /* Main.storyboard in Resources */,
 				63B2A7A72236A3E400D88974 /* LaunchScreen.storyboard in Resources */,
 				63B2A7A42236A3E400D88974 /* Assets.xcassets in Resources */,
-				63B2A7A22236A3E300D88974 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,20 +474,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63B2A7A02236A3E300D88974 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63B2A7A12236A3E300D88974 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63B2A7A52236A3E400D88974 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				63B2A7A62236A3E400D88974 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63B2A81B223F659F00D88974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B2A81C223F659F00D88974 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

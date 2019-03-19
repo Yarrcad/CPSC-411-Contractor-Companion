@@ -13,11 +13,13 @@ import UIKit
 class TaskTableViewController: UITableViewController {
     
     private var roundButton = UIButton()
+    private var Data: [[String]] = Array(repeating: Array(repeating: "", count: 3), count: 100)
+    private var  rowsCount = 0
     
     enum Const {
         static let closeCellHeight: CGFloat = 179
         static let openCellHeight: CGFloat = 488
-        static let rowsCount = 10
+        //static let rowsCount = 10
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -68,11 +70,11 @@ class TaskTableViewController: UITableViewController {
     }
     
     @IBAction func ButtonClick(_ sender: UIButton){
-        showSignupForm()
+        showSignupForm(loc: rowsCount, anoth: true)
     }
 
     
-    private func showSignupForm() {
+    private func showSignupForm(loc: Int, anoth: Bool) {
         var style: FormStyle
         style = .dark
         var attributes: EKAttributes
@@ -102,6 +104,14 @@ class TaskTableViewController: UITableViewController {
         let title = EKProperty.LabelContent(text: "Create a Task", style: style.title)
         let textFields = FormFieldPresetFactory.fields(by: [.taskName, .date, .description], style: style)
         let button = EKProperty.ButtonContent(label: .init(text: "Save", style: style.buttonTitle), backgroundColor: style.buttonBackground, highlightedBackgroundColor: style.buttonBackground.withAlphaComponent(0.8)) {
+            self.Data[loc][0] = textFields[0].textContent
+            self.Data[loc][1] = textFields[1].textContent
+            self.Data[loc][2] = textFields[2].textContent
+            if (anoth){
+            self.rowsCount += 1
+            self.setup()
+            }
+            self.refreshHandler()
             SwiftEntryKit.dismiss()
         }
         let contentView = EKFormMessageView(with: title, textFieldsContent: textFields, buttonContent: button)
@@ -112,7 +122,7 @@ class TaskTableViewController: UITableViewController {
     }
     
     private func setup() {
-        cellHeights = Array(repeating: Const.closeCellHeight, count: Const.rowsCount)
+        cellHeights = Array(repeating: Const.closeCellHeight, count: rowsCount)
         tableView.estimatedRowHeight = Const.closeCellHeight
         tableView.rowHeight = UITableView.automaticDimension
         //tableView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "background"))
@@ -120,6 +130,10 @@ class TaskTableViewController: UITableViewController {
             tableView.refreshControl = UIRefreshControl()
             tableView.refreshControl?.addTarget(self, action: #selector(refreshHandler), for: .valueChanged)
         }
+    }
+    
+    @IBAction func cellReset(_ sender: UIButton) {
+        showSignupForm(loc: Int(sender.accessibilityIdentifier!)!, anoth: false)
     }
     
     @objc func refreshHandler() {
@@ -138,7 +152,7 @@ class TaskTableViewController: UITableViewController {
 extension TaskTableViewController {
     
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return 10
+        return rowsCount
     }
     
     override func tableView(_: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -155,6 +169,9 @@ extension TaskTableViewController {
         }
         
         cell.number = indexPath.row
+        cell.title = Data[indexPath.row][0]
+        cell.date = Data[indexPath.row][1]
+        cell.desc = Data[indexPath.row][2]
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
